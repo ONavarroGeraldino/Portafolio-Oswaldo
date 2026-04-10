@@ -1,0 +1,84 @@
+/* Contenedor Principal */
+.footer-container {
+  background-color: #0f172a;
+  padding: 3rem 1rem;
+  border-top: 1px solid #334155;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column; /* Alineación en columna */
+  align-items: center;    /* Centrado horizontal */
+  gap: 1.5rem;            /* Espaciado entre elementos */
+  max-width: 600px;
+}
+
+.footer-copy {
+  color: #cbd5e1;
+  font-size: 1rem;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.name-highlight {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.footer-social {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Estilo de los Botones Redondos o Cuadrados */
+.footer-link {
+  background-color: #1e293b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px; /* Un poco más redondeado para el estilo moderno */
+  border: 2px solid transparent;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.footer-icon {
+  font-size: 1.5rem;
+  color: #cbd5e1;
+  transition: all 0.3s ease;
+}
+
+.footer-email-text {
+  color: #64748b;
+  font-size: 0.85rem;
+  margin-top: -0.5rem;
+}
+
+/* --- Efectos de los colores que proporcionaste --- */
+
+/* Hover Gmail (Naranja/Coral) */
+.footer-link.email:hover {
+  border-color: #f97316;
+  box-shadow: 0 0 20px rgba(249, 115, 22, 0.25);
+  transform: translateY(-5px);
+}
+.footer-link.email:hover .footer-icon {
+  color: #f97316;
+  transform: scale(1.1);
+}
+
+/* Hover GitHub (Azul React/Tailwind) */
+.footer-link.github:hover {
+  border-color: #60a5fa;
+  box-shadow: 0 0 20px rgba(96, 165, 250, 0.25);
+  transform: translateY(-5px);
+}
+.footer-link.github:hover .footer-icon {
+  color: #60a5fa;
+  transform: scale(1.1);
+}

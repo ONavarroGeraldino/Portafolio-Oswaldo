@@ -1,0 +1,14 @@
+body {
+    background-color: var(--bg-color);
+    font-family: 'Fira Code', monospace; /* Tipografía estilo código */
+}
+/* Esto hace que todos los enlaces con anclas (#) se desplacen suavemente */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Opcional: añade un padding-top a tus secciones para que el Navbar 
+no tape el título de la sección al llegar */
+section {
+  scroll-margin-top: 80px; /* Ajusta según la altura de tu navbar */
+}

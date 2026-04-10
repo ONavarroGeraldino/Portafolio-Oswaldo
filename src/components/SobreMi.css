@@ -1,0 +1,142 @@
+.about-section {
+    padding: 80px 0;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: var(--family-sans);
+}
+
+.about-section .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    gap: 50px; /* Espacio entre columnas */
+}
+
+/* Estilos de Texto */
+.about-content {
+    flex: 1.5; /* La columna de texto es más ancha */
+}
+
+.sub-title {
+    font-family: var(--family-mono);
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+.about-content p {
+    color: var(--text-dim);
+    line-height: 1.7;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+/* Caja de Habilidades (Skills) */
+.skills-box {
+    margin-top: 30px;
+    border-left: 2px solid #232323;
+    padding-left: 20px;
+}
+
+.skills-box h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.skills-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 10px 15px;
+}
+
+.skills-list li {
+    font-family: var(--family-mono);
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s ease;
+}
+
+.skills-list li:hover {
+    color: var(--accent-color);
+}
+
+/* Icono sutil antes de cada skill (puedes reemplazarlo por iconos reales) */
+.dev-icon::before {
+    content: "▹";
+    color: var(--accent-color);
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+/* Estilo especial para los frameworks */
+.accent-skill {
+    font-weight: 600;
+}
+
+/* Estilos de la Foto */
+.about-image {
+    flex: 1; /* La columna de la foto es más estrecha */
+    display: flex;
+    justify-content: center;
+}
+
+.image-wrapper {
+    position: relative;
+    max-width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    /* Efecto de marco decorativo */
+    box-shadow: 10px 10px 0 var(--accent-color);
+}
+
+.profile-pic {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(1.1); /* Efecto profesional b/n */
+    transition: all 0.4s ease;
+}
+
+/* Efecto hover en la foto */
+.image-wrapper:hover .profile-pic {
+    filter: none; /* Recupera el color */
+    transform: scale(1.02);
+}
+
+/* Responsive (Para móviles) */
+@media (max-width: 768px) {
+    .about-section .container {
+        flex-direction: column-reverse; /* Foto arriba en móvil */
+        gap: 30px;
+        text-align: center;
+    }
+
+    .about-content h1 {
+        font-size: 2rem;
+    }
+
+    .skills-box {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .skills-list {
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

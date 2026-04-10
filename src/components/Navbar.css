@@ -1,0 +1,75 @@
+:root {
+    --bg-color: #0a0a0a;       /* Negro muy oscuro */
+    --accent-color: #64ffda;   /* Verde cian (estilo terminal) */
+    --text-main: #ccd6f6;      /* Gris azulado claro */
+    --text-dim: #8892b0;       /* Gris para enlaces secundarios */
+    --nav-height: 80px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    height: var(--nav-height);
+    background-color: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px); /* Efecto de cristal esmerilado */
+    border-bottom: 1px solid #232323;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Botón de Contacto (CTA) */
+.cta a {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+}
+
+.cta a:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links li:not(.cta) {
+        display: none; /* Aquí podrías implementar un menú hamburguesa */
+    }
+}
