@@ -1,0 +1,21 @@
+.nav-link-item a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link-item a:hover {
+    color: var(--accent-color);
+}
+
+.nav-link-item.cta a {
+    background: var(--accent-color);
+    color: var(--bg-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+
+.nav-link-item.cta a:hover {
+    opacity: 0.9;
+}

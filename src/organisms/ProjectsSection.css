@@ -1,0 +1,17 @@
+.main-container {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--text-primary);
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.swiper-container-wrapper {
+    width: 100%;
+    padding: 2rem 0;
+}

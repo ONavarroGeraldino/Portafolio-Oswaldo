@@ -1,0 +1,49 @@
+.about-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-section .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-section .sub-title {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about-section h1 {
+    color: var(--text-primary);
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.about-section p {
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.about-image .image-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 16px;
+    border: 3px solid var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .about-section .container {
+        grid-template-columns: 1fr;
+    }
+}
