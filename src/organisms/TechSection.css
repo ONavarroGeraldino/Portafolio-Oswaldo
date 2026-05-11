@@ -9,10 +9,21 @@
     color: var(--text-primary);
     font-size: 2rem;
     margin-bottom: 3rem;
+    position: relative;
+}
+
+.tech-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
 }
 
 .tech-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1.5rem;
 }

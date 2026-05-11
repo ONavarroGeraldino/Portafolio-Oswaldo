@@ -3,25 +3,100 @@
     flex-direction: column;
     align-items: center;
     gap: 0.75rem;
-    padding: 1.5rem;
+    padding: 1.5rem 1rem;
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.tech-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 0%, rgba(0, 212, 255, 0.1), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
 }
 
 .tech-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
     border-color: var(--accent-color);
+    box-shadow: 0 8px 32px rgba(0, 212, 255, 0.12);
+}
+
+.tech-card:hover::before {
+    opacity: 1;
 }
 
 .tech-card .tech-icon {
     font-size: 2rem;
     color: var(--text-primary);
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.tech-card:hover .tech-icon {
+    color: var(--accent-color);
+    transform: scale(1.15);
 }
 
 .tech-card .tech-name {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 500;
     color: var(--text-primary);
+    position: relative;
+    z-index: 1;
 }
+
+.tech-card.js:hover {
+    border-color: #f7df1e;
+    box-shadow: 0 8px 32px rgba(247, 223, 30, 0.15);
+}
+.tech-card.js:hover .tech-icon { color: #f7df1e; }
+.tech-card.js::before { background: radial-gradient(circle at 50% 0%, rgba(247, 223, 30, 0.1), transparent 70%); }
+
+.tech-card.html:hover {
+    border-color: #e34f26;
+    box-shadow: 0 8px 32px rgba(227, 79, 38, 0.15);
+}
+.tech-card.html:hover .tech-icon { color: #e34f26; }
+.tech-card.html::before { background: radial-gradient(circle at 50% 0%, rgba(227, 79, 38, 0.1), transparent 70%); }
+
+.tech-card.css:hover {
+    border-color: #1572b6;
+    box-shadow: 0 8px 32px rgba(21, 114, 182, 0.15);
+}
+.tech-card.css:hover .tech-icon { color: #1572b6; }
+.tech-card.css::before { background: radial-gradient(circle at 50% 0%, rgba(21, 114, 182, 0.1), transparent 70%); }
+
+.tech-card.php:hover {
+    border-color: #777bb4;
+    box-shadow: 0 8px 32px rgba(119, 123, 180, 0.15);
+}
+.tech-card.php:hover .tech-icon { color: #777bb4; }
+.tech-card.php::before { background: radial-gradient(circle at 50% 0%, rgba(119, 123, 180, 0.1), transparent 70%); }
+
+.tech-card.laravel:hover {
+    border-color: #ff2d20;
+    box-shadow: 0 8px 32px rgba(255, 45, 32, 0.15);
+}
+.tech-card.laravel:hover .tech-icon { color: #ff2d20; }
+.tech-card.laravel::before { background: radial-gradient(circle at 50% 0%, rgba(255, 45, 32, 0.1), transparent 70%); }
+
+.tech-card.tailwind:hover {
+    border-color: #38bdf8;
+    box-shadow: 0 8px 32px rgba(56, 189, 248, 0.15);
+}
+.tech-card.tailwind:hover .tech-icon { color: #38bdf8; }
+.tech-card.tailwind::before { background: radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.1), transparent 70%); }
+
+.tech-card.react:hover {
+    border-color: #61dafb;
+    box-shadow: 0 8px 32px rgba(97, 218, 251, 0.15);
+}
+.tech-card.react:hover .tech-icon { color: #61dafb; }
+.tech-card.react::before { background: radial-gradient(circle at 50% 0%, rgba(97, 218, 251, 0.1), transparent 70%); }

@@ -3,18 +3,33 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
+    background: rgba(10, 10, 10, 0.7);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     position: sticky;
     top: 0;
     z-index: 100;
+    transition: padding 0.3s ease, background 0.3s ease;
+}
+
+.navbar.scrolled {
+    padding: 0.6rem 2rem;
+    background: rgba(10, 10, 10, 0.9);
+    border-bottom-color: rgba(0, 212, 255, 0.15);
 }
 
 .navbar .logo a {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 800;
     color: var(--accent-color);
     text-decoration: none;
+    letter-spacing: -1px;
+    transition: text-shadow 0.3s ease;
+}
+
+.navbar .logo a:hover {
+    text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
 }
 
 @media (max-width: 768px) {

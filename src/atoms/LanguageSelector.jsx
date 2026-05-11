@@ -3,7 +3,7 @@ import './LanguageSelector.css';
 
 export function LanguageSelector() {
     const { lang, setLang, t } = useLanguage();
-    const languages = ['es', 'en', 'ja'];
+    const languages = ['es', 'en'];
 
     return (
         <div className="language-selector">

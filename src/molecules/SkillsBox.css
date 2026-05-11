@@ -1,15 +1,17 @@
 .skills-box {
     margin-top: 2rem;
     padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--glass-bg);
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(8px);
 }
 
 .skills-box h3 {
     margin: 0 0 1rem;
     color: var(--text-primary);
     font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .skills-list {

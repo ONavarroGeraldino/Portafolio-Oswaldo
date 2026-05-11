@@ -8,6 +8,8 @@ import imgPortfolio from '../shared/assets/images/Oswaldo.png';
 import imgMusic from '../shared/assets/images/MP3.png';
 import imgEcommerce from '../shared/assets/images/Store.png';
 import imgDashboard from '../shared/assets/images/Dashboard.png';
+import imgEventos from '../shared/assets/images/Eventos.png';
+import imgMovies from '../shared/assets/images/Movies.png';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -16,7 +18,7 @@ import 'swiper/css/effect-coverflow';
 
 import './ProjectsSection.css';
 
-const images = [imgPortfolio, imgMusic, imgEcommerce, imgDashboard];
+const images = [imgPortfolio, imgMusic, imgEcommerce, imgDashboard, imgEventos, imgMovies];
 
 export function ProjectsSection() {
     const { t } = useLanguage();
