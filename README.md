@@ -1,18 +1,33 @@
-# React + Vite
+# Oswaldo Navarro - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portafolio personal desarrollado con **React 19 + Vite 8**. Diseño oscuro con acentos granate, estilo corporativo moderno.
 
-Currently, two official plugins are available:
+## 🚀 Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19** — Latest features incl. React Compiler
+- **Vite 8** — Build rápido con HMR
+- **Framer Motion** — Animaciones por scroll
+- **Swiper** — Carruseles 3D (coverflow, cards)
+- **CSS Variables** — Sistema de diseño con paleta personalizada
+- **i18n** — Español/Inglés via Context API
+- **Supabase** — Backend (preparado para integración)
 
-## React Compiler
+## ✨ Secciones
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- **Sobre mí** — Presentación con foto, descripción y skills
+- **Proyectos** — Carrusel 3D con proyectos destacados
+- **Tecnologías** — Grid con tecnologías principales
+- **Contacto** — Enlaces directos
 
-Note: This will impact Vite dev & build performances.
+## 🛠️ Scripts
 
-## Expanding the ESLint configuration
+```bash
+npm run dev      # Servidor de desarrollo
+npm run build    # Build de producción
+npm run preview  # Vista previa del build
+npm run lint     # ESLint
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🌐 Deploy
+
+Configurado para **Netlify** con SPA redirects.

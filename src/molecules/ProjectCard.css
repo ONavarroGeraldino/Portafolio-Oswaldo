@@ -19,10 +19,10 @@
     border-radius: 16px;
     background: linear-gradient(
         135deg,
-        rgba(0, 212, 255, 0.3),
+        rgba(192, 57, 43, 0.3),
         transparent 40%,
         transparent 60%,
-        rgba(0, 212, 255, 0.1)
+        rgba(192, 57, 43, 0.1)
     );
     z-index: -1;
     opacity: 0;
@@ -31,10 +31,10 @@
 
 .project-card:hover {
     transform: translateY(-8px) scale(1.02);
-    border-color: rgba(0, 212, 255, 0.3);
+    border-color: rgba(192, 57, 43, 0.3);
     box-shadow:
-        0 12px 48px rgba(0, 212, 255, 0.15),
-        0 0 0 1px rgba(0, 212, 255, 0.1);
+        0 12px 48px rgba(192, 57, 43, 0.15),
+        0 0 0 1px rgba(192, 57, 43, 0.1);
 }
 
 .project-card:hover::before {
@@ -93,7 +93,7 @@
 .project-card .btn-view {
     display: inline-block;
     padding: 0.6rem 1.8rem;
-    background: linear-gradient(135deg, var(--accent-color), #0099cc);
+    background: linear-gradient(135deg, var(--accent-color), #962d22);
     color: var(--bg-primary);
     text-decoration: none;
     border-radius: 8px;
@@ -126,5 +126,5 @@
 
 .project-card .btn-view:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(0, 212, 255, 0.4);
+    box-shadow: 0 4px 16px rgba(192, 57, 43, 0.4);
 }

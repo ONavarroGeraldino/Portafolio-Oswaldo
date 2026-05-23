@@ -16,7 +16,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 50% 0%, rgba(0, 212, 255, 0.1), transparent 70%);
+    background: radial-gradient(circle at 50% 0%, rgba(192, 57, 43, 0.1), transparent 70%);
     opacity: 0;
     transition: opacity 0.4s ease;
 }
@@ -24,7 +24,7 @@
 .tech-card:hover {
     transform: translateY(-8px);
     border-color: var(--accent-color);
-    box-shadow: 0 8px 32px rgba(0, 212, 255, 0.12);
+    box-shadow: 0 8px 32px rgba(192, 57, 43, 0.12);
 }
 
 .tech-card:hover::before {

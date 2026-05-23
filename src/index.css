@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap');
 
 :root {
-    --bg-color: #0a0a0a;
+    --bg-color: #0a0808;
     --bg-primary: #ffffff;
-    --accent-color: #00d4ff;
+    --accent-color: #c0392b;
+    --accent-hover: #e74c3c;
     --text-primary: #e5e5e5;
     --text-muted: #a0a0a0;
-    --glass-bg: rgba(255, 255, 255, 0.04);
-    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-bg: rgba(192, 57, 43, 0.04);
+    --glass-border: rgba(192, 57, 43, 0.1);
 }
 
 * {
@@ -32,9 +33,9 @@ body::before {
     width: 100%;
     height: 100%;
     background:
-        radial-gradient(ellipse 80% 60% at 50% -10%, rgba(0, 212, 255, 0.08), transparent),
-        radial-gradient(ellipse 60% 50% at 80% 80%, rgba(0, 212, 255, 0.04), transparent),
-        radial-gradient(ellipse 50% 40% at 10% 90%, rgba(0, 212, 255, 0.03), transparent);
+        radial-gradient(ellipse 80% 60% at 50% -10%, rgba(192, 57, 43, 0.08), transparent),
+        radial-gradient(ellipse 60% 50% at 80% 80%, rgba(192, 57, 43, 0.04), transparent),
+        radial-gradient(ellipse 50% 40% at 10% 90%, rgba(192, 57, 43, 0.03), transparent);
     pointer-events: none;
     z-index: 0;
 }
@@ -78,7 +79,7 @@ img {
 }
 
 ::selection {
-    background: rgba(0, 212, 255, 0.3);
+    background: rgba(192, 57, 43, 0.3);
     color: var(--bg-primary);
 }
 
@@ -91,10 +92,10 @@ img {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(0, 212, 255, 0.3);
+    background: rgba(192, 57, 43, 0.3);
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 212, 255, 0.5);
+    background: rgba(192, 57, 43, 0.5);
 }

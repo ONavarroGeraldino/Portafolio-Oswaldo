@@ -16,7 +16,7 @@
 .navbar.scrolled {
     padding: 0.6rem 2rem;
     background: rgba(10, 10, 10, 0.9);
-    border-bottom-color: rgba(0, 212, 255, 0.15);
+    border-bottom-color: rgba(192, 57, 43, 0.15);
 }
 
 .navbar .logo a {
@@ -29,7 +29,7 @@
 }
 
 .navbar .logo a:hover {
-    text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+    text-shadow: 0 0 20px rgba(192, 57, 43, 0.5);
 }
 
 @media (max-width: 768px) {
