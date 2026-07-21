@@ -27,7 +27,7 @@ export function MinimalPage() {
                     waveAmplitude={0.5}
                     particleSize={1.5}
                     lerpSpeed={0.05}
-                    color="#7dd3fc"
+                    color="#fb923c"
                     autoAnimate={true}
                     particleVariance={0.5}
                     rotationSpeed={0}

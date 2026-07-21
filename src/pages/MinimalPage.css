@@ -1,5 +1,5 @@
 .minimal-page {
-    background: #0a0e1a;
+    background: #0c0a1a;
     color: #e2e8f0;
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
@@ -14,7 +14,7 @@
     height: 100vh;
     z-index: 0;
     pointer-events: none;
-    opacity: 0.25;
+    opacity: 0.2;
 }
 
 .minimal-nav {
@@ -27,11 +27,11 @@
     gap: 2rem;
     padding: 2rem 3rem;
     z-index: 10;
-    background: linear-gradient(180deg, rgba(10, 14, 26, 0.8), transparent);
+    background: linear-gradient(180deg, rgba(12, 10, 26, 0.8), transparent);
 }
 
 .minimal-nav a {
-    color: #7b93ab;
+    color: #8b8fa3;
     text-decoration: none;
     font-size: 0.8rem;
     font-weight: 500;
@@ -41,7 +41,7 @@
 }
 
 .minimal-nav a:hover {
-    color: #7dd3fc;
+    color: #fb923c;
 }
 
 .minimal-hero {
@@ -61,7 +61,7 @@
     font-size: 0.8rem;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    color: #5b7a9e;
+    color: #6b7280;
     margin-bottom: 1.5rem;
     font-weight: 500;
 }
@@ -72,7 +72,7 @@
     letter-spacing: -0.05em;
     line-height: 0.9;
     margin: 0 0 1.5rem;
-    background: linear-gradient(135deg, #e0f2fe, #7dd3fc, #38bdf8);
+    background: linear-gradient(135deg, #38bdf8, #818cf8, #fb923c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -80,7 +80,7 @@
 
 .minimal-subtitle {
     font-size: 1.1rem;
-    color: #7b93ab;
+    color: #8b8fa3;
     max-width: 500px;
     line-height: 1.6;
     margin-bottom: 2.5rem;
@@ -96,7 +96,7 @@
     align-items: center;
     gap: 0.5rem;
     padding: 0.8rem 2rem;
-    border: 1px solid rgba(125, 211, 252, 0.2);
+    border: 1px solid rgba(251, 146, 60, 0.2);
     color: #e2e8f0;
     text-decoration: none;
     font-size: 0.85rem;
@@ -106,9 +106,9 @@
 }
 
 .minimal-btn:hover {
-    background: #7dd3fc;
-    color: #0a0e1a;
-    border-color: #7dd3fc;
+    background: linear-gradient(135deg, #38bdf8, #fb923c);
+    color: #0c0a1a;
+    border-color: transparent;
 }
 
 .minimal-about {
@@ -127,18 +127,21 @@
     letter-spacing: -0.03em;
     line-height: 1.1;
     margin: 0 0 2rem;
-    color: #e0f2fe;
+    background: linear-gradient(135deg, #7dd3fc, #fb923c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .minimal-about-text {
     font-size: 1.05rem;
-    color: #94a3b8;
+    color: #9ca3af;
     line-height: 1.8;
     margin-bottom: 1.5rem;
 }
 
 .minimal-about-text strong {
-    color: #7dd3fc;
+    color: #fb923c;
     font-weight: 600;
 }
 
@@ -156,8 +159,8 @@
 }
 
 .minimal-project-card {
-    background: rgba(15, 23, 42, 0.6);
-    border: 1px solid rgba(125, 211, 252, 0.06);
+    background: rgba(15, 12, 30, 0.6);
+    border: 1px solid rgba(56, 189, 248, 0.08);
     border-radius: 8px;
     text-decoration: none;
     color: #e2e8f0;
@@ -166,8 +169,8 @@
 }
 
 .minimal-project-card:hover {
-    border-color: rgba(125, 211, 252, 0.2);
-    background: rgba(15, 23, 42, 0.9);
+    border-color: rgba(251, 146, 60, 0.2);
+    background: rgba(15, 12, 30, 0.9);
     transform: translateY(-2px);
 }
 
@@ -194,7 +197,7 @@
 
 .minimal-project-number {
     font-size: 0.7rem;
-    color: #5b7a9e;
+    color: #6b7280;
     letter-spacing: 0.05em;
     display: block;
     margin-bottom: 0.5rem;
@@ -210,7 +213,7 @@
 
 .minimal-project-desc {
     font-size: 0.85rem;
-    color: #7b93ab;
+    color: #8b8fa3;
     margin: 0;
 }
 
@@ -243,22 +246,22 @@
 
 .minimal-tech .skill-item {
     padding: 0.5rem 1.2rem;
-    background: rgba(125, 211, 252, 0.06);
-    border: 1px solid rgba(125, 211, 252, 0.1);
+    background: rgba(56, 189, 248, 0.06);
+    border: 1px solid rgba(251, 146, 60, 0.1);
     border-radius: 4px;
-    color: #94a3b8;
+    color: #9ca3af;
     font-size: 0.85rem;
     transition: all 0.2s;
 }
 
 .minimal-tech .skill-item:hover {
-    border-color: rgba(125, 211, 252, 0.3);
+    border-color: rgba(251, 146, 60, 0.3);
     color: #e0f2fe;
 }
 
 .minimal-footer {
     padding: 6rem 3rem;
-    border-top: 1px solid rgba(125, 211, 252, 0.06);
+    border-top: 1px solid rgba(251, 146, 60, 0.08);
     position: relative;
     z-index: 1;
 }
@@ -272,7 +275,7 @@
     font-weight: 800;
     letter-spacing: -0.03em;
     margin: 0 0 1rem;
-    background: linear-gradient(135deg, #e0f2fe, #7dd3fc);
+    background: linear-gradient(135deg, #38bdf8, #fb923c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -280,7 +283,7 @@
 
 .minimal-footer-text {
     font-size: 1.1rem;
-    color: #5b7a9e;
+    color: #6b7280;
     margin-bottom: 2rem;
 }
 
@@ -302,7 +305,7 @@
 }
 
 .minimal-footer-link:hover {
-    color: #7dd3fc;
+    color: #fb923c;
 }
 
 @media (max-width: 768px) {
