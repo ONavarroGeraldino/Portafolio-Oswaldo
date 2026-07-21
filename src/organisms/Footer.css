@@ -35,3 +35,20 @@
     color: var(--text-muted);
     font-size: 0.85rem;
 }
+
+.footer-opencode {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.opencode-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+.opencode-link:hover {
+    opacity: 0.8;
+}

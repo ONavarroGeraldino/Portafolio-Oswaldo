@@ -1,7 +1,7 @@
-import { HomePage } from './pages/HomePage';
+import { MinimalPage } from './pages/MinimalPage';
 
 function App() {
-    return <HomePage />;
+    return <MinimalPage />;
 }
 
 export default App;

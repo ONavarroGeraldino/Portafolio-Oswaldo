@@ -1,7 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, EffectCoverflow, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { ProjectCard } from '../molecules/ProjectCard';
 import { useLanguage } from '../shared/context/LanguageContext';
+import ScrollFloat from '../components/ScrollFloat';
 
 // Importación de imágenes
 import imgPortfolio from '../shared/assets/images/Oswaldo.png';
@@ -14,7 +15,7 @@ import imgMovies from '../shared/assets/images/Movies.png';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/effect-coverflow';
+
 
 import './ProjectsSection.css';
 
@@ -25,21 +26,23 @@ export function ProjectsSection() {
 
     return (
         <div className="main-container">
-            <h2 className="section-title">{t.projects.title}</h2>
+            <ScrollFloat
+                containerClassName="section-title"
+                animationDuration={1}
+                ease='back.inOut(2)'
+                scrollStart='center bottom+=50%'
+                scrollEnd='bottom bottom-=40%'
+                stagger={0.03}
+            >
+                {t.projects.title}
+            </ScrollFloat>
             <div className="swiper-container-wrapper">
                 <Swiper
-                    modules={[Navigation, Pagination, EffectCoverflow, Autoplay]}
-                    effect={'coverflow'}
+                    modules={[Navigation, Pagination, Autoplay]}
                     grabCursor={true}
-                    centeredSlides={true}
+                    centeredSlides={false}
                     slidesPerView={'auto'}
-                    coverflowEffect={{
-                        rotate: 30,
-                        stretch: 0,
-                        depth: 100,
-                        modifier: 1,
-                        slideShadows: true,
-                    }}
+                    freeMode={true}
                     autoplay={{ delay: 3000, disableOnInteraction: false }}
                     pagination={{ clickable: true }}
                     navigation={true}

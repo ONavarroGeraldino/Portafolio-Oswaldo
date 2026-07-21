@@ -28,6 +28,10 @@ export function Footer() {
                 </div>
 
                 <span className="footer-email-text">oswaldonavarro0308@gmail.com</span>
+
+                <p className="footer-opencode">
+                    Built with <a href="https://opencode.ai" target="_blank" rel="noopener noreferrer" className="opencode-link">opencode</a>
+                </p>
             </div>
         </footer>
     );
